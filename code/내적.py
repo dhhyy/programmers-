@@ -6,7 +6,6 @@ def solution(a, b):
             
     return answer
 
-
 a = [1,2,3,4]
 b = [-3,-1,0,2]
 
