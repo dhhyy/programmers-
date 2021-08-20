@@ -9,8 +9,8 @@ def solution(participant, completion):
         
     return participant[-1]
     
-    
-# 풀이 과정
+ 
+# 풀이
 
 # 1. participant에는 있고, completion에는 없는 리스트 요소 하나를 return 한다.
 # 2. completion의 길이는 participant의 길이보다 1 작습니다. -> 즉 한 명만 떨어진다. 
@@ -64,12 +64,12 @@ def solution(participant, completion):
 # ['ana', 'mislav', 'mislav', 'stanko']
 # ['ana', 'mislav', 'stanko']
 
-# x = 0
-# list_1 = [1,2,3,4,5]
-# list_2 = [5,4,3,2,1]
+x = 0
+list_1 = [1,2,3,4,5]
+list_2 = [5,4,3,2,1]
 
-# list_3 = zip(list_1, list_2)
+list_3 = dict(zip(list_1, list_2))
 
-# for i, j in list_3:
-#     x += i + j
-# print(x)
+for i, j in list_3.items():
+    x += i + j
+print(list_3)
