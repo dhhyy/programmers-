@@ -1,13 +1,13 @@
+import math
+
 def solution(n):
     
     answer = 0
     
-    for i in range(1, n):
-        if n % i == 0:
-            answer = (i+1)*(i+1)
-        else:
-            answer = -1
-            
+    if int(math.sqrt(n)) ** 2 == n:
+        answer = int((math.sqrt(n) + 1)) ** 2
+        
+    else:
+        answer = -1
+        
     return answer
-
-print(solution(121))
