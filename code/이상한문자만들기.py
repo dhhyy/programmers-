@@ -18,26 +18,3 @@ def solution(s):
     return answer[:-1]
     
 print(solution("try hello python"))
-
-3
-https://ychae-leah.tistory.com/7
-
-def solution(s):
-    
-    charlist = ""
-    idx = 0
-    for i in s:
-        if i.isalpha():
-            idx += 1
-            if idx % 2 != 0:
-                charlist += i.upper()
-            else:
-                charlist += i.lower()
-        else:
-            idx = 0
-            charlist += " "
-            continue
-        
-    return charlist
-
-print(solution("try hello python"))
